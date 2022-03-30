@@ -6,7 +6,7 @@ My contribution to the Star Wars Galactic Map family of software, and the sequel
 
 This is only a Star Wars program thanks to the awesome map picture discussed below, technically any map(image) can be put into the HTML canvas and "trade routes"(paths) drawn on there.
 
-#Description
+# Description
 
 This program is currently under construction, UI elements are currently dedicated to the construction effort so many changes are expected.
 
@@ -14,7 +14,7 @@ The Star Wars lore that I came to love is deep and connected, like the trade rou
 
 In the field of Cartography, map projection is roughly the concept of taking a 3-dimensional world and interpreting it into a 2-dimensional map. A common example of this is that an orange peel cannot be shaped like a rectangle (when fully intact and continuous). I have the utmost respect for people who make maps, and unfortunately not all maps are easily available. When I made the first iteration of this program, there were a wealth of low quality sources that were at least quite complete, now they are not so common but the fanbase has put the work in and this map was posted in a reddit thread. Credit goes to that reddit user and the individuals credited in the picture for the picture.
 
-#Planned Features:
+# Planned Features:
 - Shortest Path (Hyperspace + Subspace)
 - Trade Routes
 - Map Node Overlays
@@ -27,7 +27,7 @@ In the field of Cartography, map projection is roughly the concept of taking a 3
 - Mobile Friendly
 - Offline Friendly
 
-#Construction:
+# Construction:
 - Shortest Path (Hyperspace + Subspace)
     Until all nodes have been plotted, there could be some changes.
 - Trade Routes
