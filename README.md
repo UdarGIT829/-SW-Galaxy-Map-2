@@ -49,5 +49,5 @@ In the field of Cartography, map projection is roughly the concept of taking a 3
       Need to make scrolling and clicking make coexist in a touch screen environment. (Currently not coexisting)
       
 - Offline Friendly:
-    Add caching of Wookiepedia \n
+    Add caching of Wookiepedia.
     (Due to copyright laws this is allowed as long as original content is unaltered by caching process, so sanitizing lookup results prior to caching kinda sounds like an unfair work around
