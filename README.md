@@ -22,7 +22,7 @@ In the field of Cartography, map projection is roughly the concept of taking a 3
   - Demographics/Resources
 - Map View Overlays
   - Nearest Point of Interest to cursor
-  - Lookup Nearest Point of Interest to cursor (...)
+  - Lookup Nearest Point of Interest to cursor
   - Control Panel Modal
 - Mobile Friendly
 - Offline Friendly
@@ -41,7 +41,7 @@ In the field of Cartography, map projection is roughly the concept of taking a 3
 - Map View Overlays
   - Nearest Point of Interest to cursor
       Working but as a canvas, not a modal.
-  - Lookup Nearest Point of Interest to cursor (...)
+  - Lookup Nearest Point of Interest to cursor
       Currently Wookiepedia lookup in a sandboxed iframe in an overlay modal
   - Control Panel Modal
       Will contain switches for each feature.
