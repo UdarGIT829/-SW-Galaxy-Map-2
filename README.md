@@ -28,24 +28,26 @@ In the field of Cartography, map projection is roughly the concept of taking a 3
 - Offline Friendly
 
 # Construction:
-- Shortest Path (Hyperspace + Subspace)
+- Shortest Path (Hyperspace + Subspace):
     Until all nodes have been plotted, there could be some changes.
-- Trade Routes
+- Trade Routes:
     See Shortest Path.
-- Map Node Overlays
+- Map Node Overlays:
     Currently drawing on canvas for construction, will probably use this.
-  - Territories
+  - Territories:
       Other maps have done this very well, just like them this will require a slider for time period.
-  - Demographics/Resources
+  - Demographics/Resources:
       When the program is more built out this might be a feature or an idea for a fork.
-- Map View Overlays
-  - Nearest Point of Interest to cursor
+- Map View Overlays:
+  - Nearest Point of Interest to cursor:
       Working but as a canvas, not a modal.
-  - Lookup Nearest Point of Interest to cursor
+  - Lookup Nearest Point of Interest to cursor:
       Currently Wookiepedia lookup in a sandboxed iframe in an overlay modal
-  - Control Panel Modal
+  - Control Panel Modal:
       Will contain switches for each feature.
-- Mobile Friendly
+- Mobile Friendly:
       Need to make scrolling and clicking make coexist in a touch screen environment. (Currently not coexisting)
       
-- Offline Friendly
+- Offline Friendly:
+    Add caching of Wookiepedia \n
+    (Due to copyright laws this is allowed as long as original content is unaltered by caching process, so sanitizing lookup results prior to caching kinda sounds like an unfair work around
