@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+  	<link rel="stylesheet" type="text/css" href="index.css"/>
+	<script src="app.js"></script>
+    <title>Mouse position and mouse button</title>
+    <meta charset="utf-8">
+    <style>
+      body {
+        margin: 20px;
+        padding: 0px;
+      }
+    </style>
+  </head>
+  <body>
+   <p> Move the mouse cursor and click anywhere!</p>
+
+
+  <!-- The Modal -->
+  <div id="myModal" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+
+    <!-- Modal Content (The I frame) -->
+    <iframe id="myFrame" class="modal-content" src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials" sandbox></iframe>
+
+  </div>
+
+ 
+   <canvas id="myCanvas" width="600" height="200"></canvas>
+   <!-- <img id="html5" src="https://github.com/UdarGIT829/SW-Galaxy-Map/raw/master/mapImage.png" usemap="#SWMap" /> -->
+   <!-- <img id="html5" src="./mapImage.png" usemap="#SWMap" /> -->
+
+   <map id="SWMap" name="SWMap">
+    <area shape="rect" coords="0,0,1500,3000" onclick="Popup('Hydrogen')" href="#" alt="something"> 
+  </map>
+  </body>
+</html>
