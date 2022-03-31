@@ -28,12 +28,13 @@ In the field of Cartography, map projection is roughly the concept of taking a 3
 - Offline Friendly
 
 # Construction:
-- Shortest Path (Hyperspace + Subspace):
-    Until all nodes have been plotted, there could be some changes. Not sure how subspace travel works in Star Wars as far as speed goes, maybe use 
+- Shortest Path:
+    Until all nodes have been plotted, there could be some changes. Unfortunately after some digging around I have not found a clear way to implement Hyperspace/Subspace travel. The issue is that somehow using a gravity well to turn is faster than dropping out of hyperspace to change direction, but if and by how much faster/slower that is than just flying straight to a destination in hyperspace I do not know.
+    For now I will just implement with a small list of nearest systems to bunnyhop to, with a required minimum delta theta so you wouldn't fly through a sun. 
 - Trade Routes:
-    See Shortest Path.
+    Once shortest path is implemented, trade routes paths would have an arbitrarily lower weight.
 - Map Node Overlays:
-    Currently drawing on canvas for construction, will probably use this.
+    Currently drawing on canvas for construction, will probably use this technique.
   - Territories:
       Other maps have done this very well, just like them this will require a slider for time period.
   - Demographics/Resources:
