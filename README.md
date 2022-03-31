@@ -29,7 +29,7 @@ In the field of Cartography, map projection is roughly the concept of taking a 3
 
 # Construction:
 - Shortest Path (Hyperspace + Subspace):
-    Until all nodes have been plotted, there could be some changes.
+    Until all nodes have been plotted, there could be some changes. Not sure how subspace travel works in Star Wars as far as speed goes, maybe use 
 - Trade Routes:
     See Shortest Path.
 - Map Node Overlays:
