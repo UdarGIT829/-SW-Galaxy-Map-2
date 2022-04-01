@@ -26,23 +26,31 @@ window.addEventListener("DOMContentLoaded", function()
 
         var contextMap = canvasMap.getContext("2d");
         var indexedSystems = [
-            [1517,219,"Belkadan"], [1504,320,"Helska"], [1446,350,"Gree"],
-            [1526,369,"Sernpidal"], [1672,421,"Birgis"], [1492,420,"Plooma"],
-            [1393,457,"Dubrillion"], [909,937,"Ilum"], [1084,806,"Esfandia"],
-            [1236,596,"Valc"], [1229,533,"Kalee"], [1325,429,"Bastion"],
-            [1323,475,"Bescane"], [1327,505,"Jaemus"], [1389,684,"Garq"],
-            [1447,670,"Moltok"], [1438,659,"Ord Biniir"], [1528,654,"Horuz"],
-            [1438,533,"Dantooine"], [1612,634,"Akuria"], [677,1101,"Csilla"],
-            [849,1487,"Rakata Prime"], [784,1704,"Zonama Sekot"], [964,2037,"Rattatak"],
-            [953,1915,"Zaddja"], [1134,2101,"Cerea"], [950,2058,"Bunduki"],
-            [859,2115,"Bakura"], [998,2129,"Endor"], [1300,824,"Uba"],
-            [1422,777,"Ord Cantrell"], [1843,793,"Dathomir"], [1665,831,"Er'Kit"],
-            [1322,589,"Entralla"], [1737,534,"Bimmiel"], [1438,1254,"Coruscant"],
-            [1515,1318,"Vulpter"], [1439,1355,"Tython"], [1556,1233,"Tepasi"],
-            [1390,1175,"Borleias"], [1394,1199,"Pantolomin"], [1513,1208,"Brentaal"],
-            [1459,1240,"Alsakan"], [1488,1222,"Anaxes"], [1580,1461,"Ojom"],
-            [1786,885,"Taris"], [1581,842,"Ithor"]
+            [1517,219,"Belkadan"], [1504,320,"Helska"], [1446,350,"Gree"], [1526,369,"Sernpidal"], [1672,421,"Birgis"],
+            [1492,420,"Plooma"], [1393,457,"Dubrillion"], [909,937,"Ilum"], [1084,806,"Esfandia"], [1236,596,"Valc"],
+            [1229,533,"Kalee"], [1325,429,"Bastion"], [1323,475,"Bescane"], [1327,505,"Jaemus"], [1389,684,"Garq"],
+            [1447,670,"Moltok"], [1438,659,"Ord Biniir"], [1528,654,"Horuz"], [1438,533,"Dantooine"], [1612,634,"Akuria"],
+            [677,1101,"Csilla"], [849,1487,"Rakata Prime"], [784,1704,"Zonama Sekot"], [964,2037,"Rattatak"], [953,1915,"Zaddja"],
+            [1134,2101,"Cerea"], [950,2058,"Bunduki"], [859,2115,"Bakura"], [998,2129,"Endor"], [1300,824,"Uba"],
+            [1422,777,"Ord Cantrell"], [1843,793,"Dathomir"], [1665,831,"Er'Kit"], [1322,589,"Entralla"], [1737,534,"Bimmiel"],
+            [1438,1254,"Coruscant"], [1515,1318,"Vulpter"], [1439,1355,"Tython"], [1556,1233,"Tepasi"], [1390,1175,"Borleias"],
+            [1394,1199,"Pantolomin"], [1513,1208,"Brentaal"], [1459,1240,"Alsakan"], [1488,1222,"Anaxes"], [1580,1461,"Ojom"],
+            [1786,885,"Taris"], [1581,842,"Ithor"], [1224,760,"Aeten"], [1162,740,"Nirauan"], [1533,859,"Urce"],
+            [1371,625,"Mygeeto"], [1458,602,"Ord Trasi"], [1317,643,"Yaga Minor"], [1332,551,"Muunilinst"], [1320,671,"Borosk"],
+            [1271,733,"Comra"], [1192,803,"Adumar"], [1443,927,"Ord Mantell"], [1571,877,"Genassa"], [1729,910,"Null"],
+            [1511,788,"Phaeda"], [1410,813,"Orlinda"], [1548,677,"Generis"], [1561,731,"Ketaris"], [1625,718,"Agamar"],
+            [1524,539,"Gravlex Med"], [1660,774,"Borgo Prime"], [1389,765,"Imperial Remnant"], [1229,840,"Keitum"], [1176,851,"Namadii"],
+            [1118,877,"The Red Twins"], [1103,893,"Ankus"], [1115,928,"Rago"], [1026,984,"The Redoubt"], [1071,1013,"Utegetu Nebula"],
+            [1258,1012,"Dorin"], [1325,972,"Vortex"], [1293,879,"Iridonia"], [1312,917,"Fornax"], [1286,988,"Vicondor"],
+            [1210,948,"Glee Anselm"], [1138,933,"Kril'Dor"], [1176,868,"Ansion"], [1888,603,"Tangrene"], [1840,721,"Axxila"],
+            [1799,729,"Vinsoth"], [1790,559,"Lorrd"], [1288,1047,"Bilbringi"], [1320,1133,"Vakkar"], [1357,1127,"Palanhi"],
+            [1513,1047,"Datar"], [1377,1167,"Mrisst"], [1318,1330,"N'Zoth"], [1154,1051,"Roxuli"], [1270,1120,"Reecee"],
+            [1488,1261,"Ixtlar"], [1530,1237,"Skako"], [1875,475,"Maltha Obex"], [2037,457,"Ventooine"], [2085,523,"Telos"],
+            [2109,576,"Thila"], [1995,573,"Thalassia"], [2125,495,"Listehol"], [2139,855,"Vjun"], [2311,769,"Felucia"],
+            [2377,1042,"Saleucami"], [2035,989,"Velmor"], [1963,1279,"Umbara"], [2298,1475,"Toydaria"], [1914,1628,"Cyrillia"],
+            [2050,1961,"Falleen"], [2186,2129,"Christophsis"], [2215,2106,"Rodia"], [2299,2231,"Ryloth"], [1758,585,"Argazda"]
         ];
+        
         
         for (var i = 0, len = indexedSystems.length; i < len; i++) {
             indexedSystems[i][3] = "https://starwars.fandom.com/wiki/"+indexedSystems[i][2];
@@ -88,6 +96,13 @@ window.addEventListener("DOMContentLoaded", function()
                             } else if (newSystemName) {
                                 // user typed something and hit OK
                                 indexedSystems.push([xPosition,yPosition,newSystemName]);
+                                for (var i = 0, len = indexedSystems.length; i < len; i++) {
+                                    if (indexedSystems[i].length == 3){
+                                        indexedSystems[i][3] = "https://starwars.fandom.com/wiki/"+indexedSystems[i][2];
+                                    }
+                                }
+                                //Draw circle where mouse clicks
+                                drawCircle(contextMap,mousePos.x,mousePos.y,3,);
                             } else {
                                 // user hit cancel
                             }
@@ -98,14 +113,11 @@ window.addEventListener("DOMContentLoaded", function()
                         }
 
 
-
                         Popup("",indexedSystems);
 
                         var message = "Mouse up at position: " + Math.round(mousePos.x) + ',' + Math.round(mousePos.y);
                         writeMessage(canvas, message,myNearestSystem[0]);
 
-                        //Draw circle where mouse clicks
-                        drawCircle(contextMap,mousePos.x,mousePos.y,3,);
 
                         
                         break;
@@ -122,6 +134,25 @@ window.addEventListener("DOMContentLoaded", function()
                         var yPosition = Math.round(mousePos.y); 
                         var myNearestSystem = nearestSystem(xPosition,yPosition,indexedSystems);
                         console.log(myNearestSystem);
+                        //Sanitize HTML
+                        //First get HTML into variable as string
+                        //  NOT WORKING YET, JUST INSTALL ADBLOCKER FOR NOW :P
+                        // async function myFetch() {
+                        // let response = await fetch(myNearestSystem[2]);
+
+                        // if (!response.ok) {
+                        //     throw new Error(`HTTP error! status: ${response.status}`);
+                        // }
+
+                        // let text = await response.text(); // await ensures variable has fulfilled Promise
+                        // console.log(text);
+                        // }
+
+                        // fetch('data.txt')
+                        //     .then(response => response.text())
+                        //     .then(data => console.log(data));
+
+                        //Unsanitized Wookiepedia Lookup
                         myFrame.src = myNearestSystem[2];
 
                         modal.style.display = "block";
@@ -252,7 +283,7 @@ window.addEventListener("DOMContentLoaded", function()
                 }
             }
             // indexedSystems.forEach(element => {output+="\t["+element[0]+","+element[1]+","+element[2]+"],\n"});
-            output += "]\n"
+            output += "];\n"
             window.alert(output+"\n______\nDon't forget to copy to clipboard!")
         }
     
