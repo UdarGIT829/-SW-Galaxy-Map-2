@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
   	<link rel="stylesheet" type="text/css" href="index.css"/>
+    <meta name=""viewport" content=""width=device-width,initial-scale=1.0">
 	<script src="app.js"></script>
     <title>Mouse position and mouse button</title>
     <meta charset="utf-8">
@@ -9,6 +10,7 @@
       body {
         margin: 20px;
         padding: 0px;
+        min-height: 100vh;
       }
     </style>
   </head>
@@ -23,12 +25,12 @@
     <span class="close">&times;</span>
 
     <!-- Modal Content (The I frame) -->
-    <iframe id="myFrame" class="modal-content" src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials" sandbox></iframe>
+    <iframe id="myFrame" loading="lazy" class="modal-content" src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials" sandbox></iframe>
 
   </div>
 
  
-   <canvas id="myCanvas" width="600" height="200"></canvas>
+   <canvas id="myCanvas" width = 800 height="200"></canvas>
    <!-- <img id="html5" src="https://github.com/UdarGIT829/SW-Galaxy-Map/raw/master/mapImage.png" usemap="#SWMap" /> -->
    <!-- <img id="html5" src="./mapImage.png" usemap="#SWMap" /> -->
 
